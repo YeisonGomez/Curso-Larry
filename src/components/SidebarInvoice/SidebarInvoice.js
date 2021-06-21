@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { InputNumber } from 'antd';
 
 function SidebarInvoice(){
 
@@ -11,7 +12,7 @@ function SidebarInvoice(){
         {item.name}
         {item.price}
         <button>-</button>
-        <input value={item.quantity}/>
+        <InputNumber value={item.quantity}/>
         <button>+</button>
         <button>Eliminar</button>
       </div>
