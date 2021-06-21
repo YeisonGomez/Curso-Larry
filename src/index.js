@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { createBrowserHistory } from 'history';
+import { Provider } from 'react-redux';
+
+import './sass/main.scss';  
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import initStore from './store/Store';
+
+export const history = createBrowserHistory();
+export const store = initStore(history);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 

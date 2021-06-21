@@ -1,0 +1,312 @@
+.ant-input-number-handler-wrap {
+  display: none;
+}
+
+.ant-radio-button-wrapper:not(:first-child)::before {
+  width: 0px !important;
+}
+
+.disable {
+  opacity: 0.4;
+}
+
+.btn-link {
+  font-family: "Poppins500";
+  color: $color-primary !important;
+  span {
+    font-size: 2.2vh;
+    text-decoration: underline;
+  }
+  &--danger {
+    color: $color-red-400 !important;
+  }
+
+  &--dark {
+    color: white !important;
+  }
+}
+
+.btn-route-back {
+  width: 4vh;
+  height: 4vh;
+  border: none !important;
+  background-color: $color-grey-50 !important;
+  box-shadow: none;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .anticon-left {
+    color: $color-primary;
+    font-size: 1.6vh;
+    color: $color-blue-600;
+  }
+}
+
+.info-conlarry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4vh;
+  &__title {
+    font-family: "Poppins600";
+    color: $color-pink !important;
+    padding-bottom: 10px;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  &__phone {
+    font-family: "Poppins600";
+    color: $color-blue-600 !important;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.container-error {
+  background-color: $color-red-50;
+  height: 4vh;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: -1vh;
+  margin-bottom: 2vh;
+  &__message {
+    font-family: "Poppins500" !important;
+    font-size: 2vh;
+    color: $color-red-500;
+    text-align: right;
+  }
+}
+
+.label-form {
+  font-family: "Poppins600";
+  font-size: 2.2vh !important;
+  color: $color-blue-600;
+  margin-bottom: 2vh;
+  @media (max-width: $break-point-mobile) {
+    font-size: 3.8vh !important;
+  }
+}
+
+.ant-select-selection-placeholder {
+  font-family: "Poppins400";
+  font-size: 1.1em;
+  color: $color-placeholder;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+  background-color: #f0f0f0;
+}
+
+.input-custom {
+  .ant-input-number, .ant-input {
+    border: 1px solid #C0BEBE;
+    box-shadow: inset 3px 3px 3px 0px #d6d6d670;  
+    &:hover, &:focus, &:active{
+      border: 1px solid $color-blue-500;
+      box-shadow: 1px 1px 6px 0px #cad8ff;  
+    }
+  }
+}
+.scroll-custom {
+  &::-webkit-scrollbar {
+    height: 1.4vh;
+    width: 1.4vh;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $color-grey-200;
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: $color-grey-400;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  &::-webkit-scrollbar-thumb:active {
+    background-color: $color-grey-400;
+  }
+  &::-webkit-scrollbar-track {
+    background: $color-line-gray;
+    border-radius: 4px;
+  }
+  @media (max-width: $break-point-mobile) {
+    &::-webkit-scrollbar {
+      height: 0.4vh;
+      width: 0.4vh;
+    }
+  }
+}
+
+.btn {
+  font-family: "Poppins400";
+  font-size: 2.4vh !important;
+  min-height: 8vh;
+  transition: all .5s ease;
+
+  &--primary {
+    font-family: "Poppins500";
+    color: white!important;
+    transition: all .2s ease;
+    border-radius: 5px;
+    background-color: $color-blue-dark !important;
+    border-bottom: 4px solid $color-blue-dark!important;
+    &:hover, &:focus {
+      background-color: $color-blue-500!important;
+      border-bottom: 4px solid $color-pink !important;
+    }
+    &:disabled {
+      background-color: $color-blue-dark !important;
+      opacity: 0.6;
+      &:hover, &:focus{
+        border-bottom: 4px solid $color-blue-dark!important;
+      }
+    }
+  }
+
+  &--submit {
+    border: 1px solid $color-blue-dark !important;
+    color: $color-blue-dark !important;
+    background-color: $color-primary-ligth !important;
+  }
+  &--success {
+    border: 1px solid $color-green-btn !important;
+    color: $color-green-btn !important;
+    background-color: $color-green-ligth !important;
+    &--noBorder {
+      border: none !important;
+    }
+  }
+  &--discard {
+    background: none;
+    border: none;
+    color: $color-red;
+    //margin-top: 10px;
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      color: $color-red;
+    }
+  }
+  &--small {
+    font-size: 2vh !important;
+    height: 6vh;
+    min-height: 50px !important;
+  }
+  @media (max-width: $break-point-mobile) {
+    min-height: 50px;
+    &--small {
+      height: 5vh;
+      min-height: 40px !important;
+    }
+  }
+}
+.ant-modal-footer {
+  border-top: none !important;
+  display: none;
+}
+
+@media (max-width: $break-point-mobile) {
+  .none {
+    display: none !important;
+  }
+}
+
+.dropSelect {
+  border: 1px solid $color-primary;
+  border-radius: 5px;
+  background-color: white;
+  .option {
+    display: grid;
+    place-items: left;
+    font-family: "Poppins400";
+    font-size: 2vh;
+    color: $color-primary;
+    height: 4vh;
+  }
+  .ant-select-item-option-selected {
+    background-color: #dcdcdc !important;
+  }
+  &--large {
+    width: 220px !important;
+  }
+  &--pick {
+    border: 1px solid $color-pink;
+  }
+  &--primary {
+    border: 1px solid $color-blue-500;
+    .option {
+      color:$color-blue-500;
+    }
+  }
+}
+.ant-modal-mask,
+.ant-drawer-mask {
+  background-color: rgba(52, 52, 52, 0.7) !important;
+}
+.ant-tooltip-content {
+  font-family: "Poppins300";
+  font-size: 1.8vh;
+  @media (max-width: $break-point-mobile) {
+    display: none;
+  }
+}
+.ant-tooltip-inner {
+  text-align: center;
+}
+.ant-dropdown-menu-item {
+  text-align: center!important;
+}
+
+.message {
+  font-family: "Poppins400";
+  font-size: 2.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .ant-message-notice-content{
+    width: 150vh;
+    max-width: 98%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5vh;
+  }
+  &--success-border {
+    .ant-message-notice-content {
+      border: 1px solid $color-success;
+    };
+    .icon {
+      font-size: 3vh;
+      color: $color-success;
+    }
+  }
+  &--success {
+    color: white;
+    .ant-message-notice-content {
+      background-color: $color-success;
+    };
+    .icon {
+      font-size: 3vh;
+      color: white;
+    }
+  }
+  &--danger {
+    color: white;
+    .ant-message-notice-content {
+      background-color: $color-red-400;
+    };
+    .icon {
+      font-size: 3vh;
+      color: white;
+    }
+  }
+  @media (max-width: $break-point-mobile) {
+    .ant-message-notice-content {
+      height: 6vh;
+    }
+  }
+}

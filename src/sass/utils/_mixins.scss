@@ -1,0 +1,35 @@
+
+@mixin reset-select-border($color, $height) {
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    width: 100%;
+    height: $height;
+    border: 1px solid $color;
+    border-radius: 0.5vh;
+    background: none !important;
+    box-shadow: none !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@mixin reset-select-placeholder($font, $color, $fontSize) {
+  .ant-select-selection-placeholder,
+  .ant-select-selection-item {
+    font-family: $font!important;
+    font-size: $fontSize;
+    color: $color;
+  }
+}
+
+@mixin reset-select-arrow($size, $top, $right, $color) {
+  .ant-select-arrow {
+    font-size: $size;
+    top: $top;
+    right: $right;
+    .anticon-down{
+      color: $color;
+    }
+  }
+}
